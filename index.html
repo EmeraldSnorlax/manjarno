@@ -103,6 +103,31 @@
     </p>
   </details>
 
+  <details>
+    <summary>DDoSing the AUR (yes, seriously)</summary>
+    <h2>Pamac sends thousands of requests</h2>
+    <p>
+      Manjaro's AUR helper, pamac, shipped a version with a bug that accidentally sent thousands
+      of requests to the AUR per user. This rendered the AUR offline for <em>all</em> users across
+      every Arch-based distro for a few hours.
+    </p>
+    <ul>
+      <li>
+        <a href="https://redd.it/mz3biz/" rel="noopener" target="_blank">
+          Reddit Thread
+        </a>
+      </li>
+      <li>
+        <a href="https://gitlab.manjaro.org/applications/pamac/-/issues/1017" rel="noopener" target="_blank">
+          Gitlab Issue
+        </a>
+      </li>
+    </ul>
+    <p>
+      While this absolutely was not intentional, this highlights their poor QA testing.
+    </p>
+
+  </details>
   <script type="module" src="/src/main.ts" async defer></script>
 </body>
 <!-- No wider than 100 characters -- until the end of this arrow (Attributes can go longer) ------>
