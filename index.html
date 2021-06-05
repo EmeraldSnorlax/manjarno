@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="stylesheet" type="text/css" href="./src/Tailwind.postcss" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Don't use Manjaro</title>
-  </head>
-  <body class="">
-    <script type="module" src="/src/main.ts" async defer></script>
-  </body>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" type="text/css" href="./src/Tailwind.postcss" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Don't use Manjaro</title>
+</head>
+
+<!-- No wider than 100 characters -- until the end of this arrow (Attributes can go longer) ------>
+
+<body class="max-w-prose m-auto dark:bg-true-gray-800 dark:text-white bg-cream p-6">
+  <div class="flex w-full pb-4">
+    <h1 class="font-bold text-6xl quote">Manjaro is just Arch with an installer</h1>
+  </div>
+  <p class="pb-4">
+    Surely, right? It seems that almost everyone says this. And that almost everyone reccomends it
+    as being a supposedly <span class="quote">user friendly</span> way to use Arch.
+    Well...
+  </p>
+
+  <details>
+    <summary>Security</summary>
+    <p>
+      This is probably what you should care about most. Manjaro has a track record of
+      <em>really</em> poor security.
+    </p>
+
+    <h2>SSL Certs</h2>
+
+    <p>
+      <a href="https://redd.it/4inrut/" rel="noopener" target="_blank">
+        Manjaro has let their SSL certificate expire (twice!).
+      </a>
+      Want to see what incredible <span class="quote">advice</span> they gave?
+    </p>
+    <blockquote>
+      Seems we forgot to update our SSL certificate in time. [...]
+      <br>
+      In time, please use followed workaround:
+      <br>
+      <br>
+      open a terminal
+      <br>
+      enter followed line: sudo date -s 2015-04-06 +09
+      <br>
+      This will set back your system time to Mo 6. Apr 00:00:03 CEST 2015.
+    </blockquote>
+    <a href="https://web.archive.org/web/20150409040851/https://manjaro.github.io/expired_SSL_certificate/"
+      rel="noopener" target="_blank">
+      Via Internet Archive
+    </a>
+    <p>This doesn't really need any further explanation.</p>
+
+  </details>
+
+  <script type="module" src="/src/main.ts" async defer></script>
+</body>
+<!-- No wider than 100 characters -- until the end of this arrow (Attributes can go longer) ------>
+
 </html>

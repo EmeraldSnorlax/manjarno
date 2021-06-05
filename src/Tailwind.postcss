@@ -2,3 +2,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.quote::before {
+  content: '“'
+}
+
+.quote::after {
+  content: '”'
+}
+
+h2 {
+  @apply font-semibold text-3xl my-4
+}
+p {
+  @apply leading-relaxed text-lg
+}
+
+blockquote {
+  @apply border-l-4 rounded-md p-4 m-4 border-purple-500
+}
