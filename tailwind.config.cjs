@@ -1,6 +1,5 @@
 const colors = require('tailwindcss/colors')
 module.exports = {
-	mode: "jit",
 	darkMode: "class",
 	purge: [
 		"./src/**/*.{html,js,svelte,ts}",
@@ -8,7 +7,8 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				"true-gray": colors.trueGray
+				"true-gray": colors.trueGray,
+				cream: '#f2eadc',
 			}
 		},
 	},
