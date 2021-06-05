@@ -8,7 +8,7 @@ Why you shouldn't use Manjaro
 
 -> `yarn build` --> `./dist`
 
--> `yarn serve`
+-> `yarn serve` ((dont use this in production))
 
 Contributions welcome, but please ensure that you recieve a perfect lighthouse score.
 
