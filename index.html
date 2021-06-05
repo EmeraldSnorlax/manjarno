@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="light">
 
 <head>
   <meta charset="UTF-8" />
@@ -11,123 +11,167 @@
 
 <!-- No wider than 100 characters -- until the end of this arrow (Attributes can go longer) ------>
 
-<body class="max-w-prose m-auto dark:bg-true-gray-800 dark:text-white bg-cream p-6">
-  <div class="flex w-full pb-4">
-    <h1 class="font-bold text-6xl quote">Manjaro is just Arch with an installer</h1>
-  </div>
-  <p class="pb-4">
-    Surely, right? It seems that almost everyone says this. And that almost everyone reccomends it
-    as being a supposedly <span class="quote">user friendly</span> way to use Arch.
-    Well...
-  </p>
+<body class="dark:bg-true-gray-800 dark:text-white bg-cream p-6">
+  <main class="max-w-prose m-auto">
 
-  <details>
-    <summary>Security</summary>
-    <p>
-      This is probably what you should care about most. Manjaro has a track record of
-      <em>really</em> poor security.
+
+    <div class="flex w-full pb-4">
+      <h1 class="font-bold text-6xl quote">Manjaro is just Arch with an installer</h1>
+    </div>
+    <p class="pb-4">
+      Surely, right? It seems that almost everyone says this. And that almost everyone reccomends it
+      as being a supposedly <span class="quote">user friendly</span> way to use Arch.
+      Well...
     </p>
 
-    <h2>SSL Certs</h2>
+    <details>
+      <summary>Security</summary>
+      <p>
+        This is probably what you should care about most. Manjaro has a track record of
+        <em>really</em> poor security.
+      </p>
 
-    <p>
-      <a href="https://redd.it/4inrut/" rel="noopener" target="_blank">
-        Manjaro has let their SSL certificate expire (twice!).
+      <h2>SSL Certs</h2>
+
+      <p>
+        <a href="https://redd.it/4inrut/" rel="noopener" target="_blank">
+          Manjaro has let their SSL certificate expire (twice!).
+        </a>
+        Want to see what incredible <span class="quote">advice</span> they gave?
+      </p>
+      <blockquote>
+        Seems we forgot to update our SSL certificate in time. [...]
+        <br>
+        In time, please use followed workaround:
+        <br>
+        <br>
+        open a terminal
+        <br>
+        enter followed line: sudo date -s 2015-04-06 +09
+        <br>
+        This will set back your system time to Mo 6. Apr 00:00:03 CEST 2015.
+      </blockquote>
+      <a href="https://web.archive.org/web/20150409040851/https://manjaro.github.io/expired_SSL_certificate/"
+        rel="noopener" target="_blank">
+        Via Internet Archive
       </a>
-      Want to see what incredible <span class="quote">advice</span> they gave?
-    </p>
-    <blockquote>
-      Seems we forgot to update our SSL certificate in time. [...]
-      <br>
-      In time, please use followed workaround:
-      <br>
-      <br>
-      open a terminal
-      <br>
-      enter followed line: sudo date -s 2015-04-06 +09
-      <br>
-      This will set back your system time to Mo 6. Apr 00:00:03 CEST 2015.
-    </blockquote>
-    <a href="https://web.archive.org/web/20150409040851/https://manjaro.github.io/expired_SSL_certificate/"
-      rel="noopener" target="_blank">
-      Via Internet Archive
-    </a>
-    <p>This doesn't really need any further explanation.</p>
-    <p>
-      Holding packages also causes security issues, but that is better addressed in the Stability
-      section.</p>
-  </details>
+      <p>This doesn't really need any further explanation.</p>
+      <p>
+        Holding packages also causes security issues, but that is better addressed in the Stability
+        section.</p>
+    </details>
 
-  <details>
-    <summary>Stability</summary>
-    <p>
-      I have used both Manjaro and Arch, and have had almsost no issues on Arch. Manjaro required
-      constant coaxing. Isn't that what Manjaro is trying to <span class="quote">solve</span>?
-    </p>
-    <h2>Holding packages for two weeks</h2>
-    <p>
-      You've probably seen across their resources that Manjaro holds Arch packages behind for two
-      weeks. Stability is touted as the main reason for this, but this doesn't really add up.
-    </p>
-    <p>
-      In practice, what this actually means is that software upgrades reach you later for seemingly
-      no reason. That's getting bug fixes, security patches, new features two whole weeks late.
-      Aside from the obvious downside this brings, it also causes a more insidious issue.
-    </p>
-    <p>
-      I'm sure one of the reasons you're gravitating towards Manjaro is the AUR. Being able to
-      run install scripts for anything sure sounds neat, right?
-    </p>
-    <p>
-      Well, most of these scripts are written with the assumption that you aren't running a system
-      that's effectively two weeks out of date. This causes
-      <a class="cursor-help" href="https://wiki.archlinux.org/title/System_maintenance#Partial_upgrades_are_unsupported"
-        rel="noopener" target="_blank">partial upgrades</a>, which are unsupported. At best, that
-      program won't install properly, and at worst it can wreak havoc across your entire system
-      with no obvious way to fix it.
-    </p>
-  </details>
+    <details>
+      <summary>Stability</summary>
+      <p>
+        I have used both Manjaro and Arch, and have had almsost no issues on Arch. Manjaro required
+        constant coaxing. Isn't that what Manjaro is trying to <span class="quote">solve</span>?
+      </p>
+      <h2>Holding packages for two weeks</h2>
+      <p>
+        You've probably seen across their resources that Manjaro holds Arch packages behind for two
+        weeks. Stability is touted as the main reason for this, but this doesn't really add up.
+      </p>
+      <p>
+        In practice, what this actually means is that software upgrades reach you later for seemingly
+        no reason. That's getting bug fixes, security patches, new features two whole weeks late.
+        Aside from the obvious downside this brings, it also causes a more insidious issue.
+      </p>
+      <p>
+        I'm sure one of the reasons you're gravitating towards Manjaro is the AUR. Being able to
+        run install scripts for anything sure sounds neat, right?
+      </p>
+      <p>
+        Well, most of these scripts are written with the assumption that you aren't running a system
+        that's effectively two weeks out of date. This causes
+        <a class="cursor-help"
+          href="https://wiki.archlinux.org/title/System_maintenance#Partial_upgrades_are_unsupported" rel="noopener"
+          target="_blank">partial upgrades</a>, which are unsupported. At best, that
+        program won't install properly, and at worst it can wreak havoc across your entire system
+        with no obvious way to fix it.
+      </p>
+    </details>
 
-  <details>
-    <summary>Management</summary>
-    <h2>Funding</h2>
-    <p>
-      More recently, Manjaro had a controversy with their treasurer. A team member had purchased a
-      gaming laptop, and the treasurer asked to clarify this purchase.
-      <a href="https://redd.it/hxp3zi">This ultimately resulted in the treasurer being removed.</a>
-      The project <em>treasurer</em> was removed for asking someone to justify an expense filed
-      under the project.
-    </p>
-    <p>
-      Cool and normal, right?
-    </p>
-  </details>
+    <details>
+      <summary>Management</summary>
+      <h2>Funding</h2>
+      <p>
+        More recently, Manjaro had a controversy with their treasurer. A team member had purchased a
+        gaming laptop, and the treasurer asked to clarify this purchase.
+        <a href="https://redd.it/hxp3zi">This ultimately resulted in the treasurer being removed.</a>
+        The project <em>treasurer</em> was removed for asking someone to justify an expense filed
+        under the project.
+      </p>
+      <p>
+        Cool and normal, right?
+      </p>
+    </details>
 
-  <details>
-    <summary>DDoSing the AUR (yes, seriously)</summary>
-    <h2>Pamac sends thousands of requests</h2>
-    <p>
-      Manjaro's AUR helper, pamac, shipped a version with a bug that accidentally sent thousands
-      of requests to the AUR per user. This rendered the AUR offline for <em>all</em> users across
-      every Arch-based distro for a few hours.
-    </p>
-    <ul>
+    <details>
+      <summary>DDoSing the AUR (yes, seriously)</summary>
+      <h2>Pamac sends thousands of requests</h2>
+      <p>
+        Manjaro's AUR helper, pamac, shipped a version with a bug that accidentally sent thousands
+        of requests to the AUR per user. This rendered the AUR offline for <em>all</em> users across
+        every Arch-based distro for a few hours.
+      </p>
+      <ul>
+        <li>
+          <a href="https://redd.it/mz3biz/" rel="noopener" target="_blank">
+            Reddit Thread
+          </a>
+        </li>
+        <li>
+          <a href="https://gitlab.manjaro.org/applications/pamac/-/issues/1017" rel="noopener" target="_blank">
+            Gitlab Issue
+          </a>
+        </li>
+      </ul>
+      <p>
+        While this absolutely was not intentional, this highlights their poor QA testing.
+      </p>
+    </details>
+
+    <h2>So what <em>should</em> I use?</h2>
+    <p class="text-gray-600 dark:text-gray-400">I have no affiliation with any of these projects.</p>
+    <ul class="list-decimal ml-8">
       <li>
-        <a href="https://redd.it/mz3biz/" rel="noopener" target="_blank">
-          Reddit Thread
+        <a href="https://github.com/archlinux/archinstall" rel="noopener" target="_blank">
+          <p>Arch <em>already comes</em> with an installer now!</p>
         </a>
       </li>
       <li>
-        <a href="https://gitlab.manjaro.org/applications/pamac/-/issues/1017" rel="noopener" target="_blank">
-          Gitlab Issue
+        <a href="https://endeavouros.com/" rel="noopener" target="_blank">
+          <p>EndeavourOS seems to be what Manjaro is going for, but done properly.</p>
         </a>
       </li>
     </ul>
-    <p>
-      While this absolutely was not intentional, this highlights their poor QA testing.
-    </p>
 
-  </details>
+    <h2>Quick things</h2>
+    <p>
+      I know what I've written here can be seen as inflammatory, but that's not really my intention.
+    </p>
+    <p>
+      I've written this to have a resource to quickly point to the next time someone says
+      <span class="quote">should i use manjaro??</span> in a chat room.
+    </p>
+    <p>
+      Maintaing a distro is commendable, and that alone takes credit. However, I'd rather not have
+      your time (and others, when Manjaro inevitably breaks, and you need to ask for help) wasted,
+      trying to figure out the odd quirks and issues that Manjaro causes.
+    </p>
+  </main>
+  <footer class="xl:flex items-center justify-between">
+    <p>Made with TailwindCSS.</p>
+    <div>
+      <p><a href="https://github.com/EmeraldSnorlax/manjarno" rel="noopener" target="_blank">
+        <span class="hidden lg:inline">Contributions welcome!</span> BSD-3-Clause License - EmeraldSnorlax (Rain)
+      </a></p>
+      <p class="hidden xl:inline">Mirroring welcome, as long as the license is abided by.</p>
+    </div>
+
+  </footer>
+
   <script type="module" src="/src/main.ts" async defer></script>
 </body>
 <!-- No wider than 100 characters -- until the end of this arrow (Attributes can go longer) ------>
