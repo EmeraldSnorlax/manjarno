@@ -14,10 +14,21 @@
 
 <body class="dark:bg-true-gray-800 dark:text-white bg-cream p-6">
   <main class="max-w-prose m-auto">
-    <noscript class="font-semibold text-2xl">For the best experience (and dark mode!), please enable JavaScript.</noscript>
     <div class="flex w-full pb-4">
       <h1 class="font-bold text-4xl lg:text-6xl quote">Manjaro is just Arch with an installer</h1>
     </div>
+    <noscript>
+      <p class="text-gray-600 text-sm">
+        For dark mode, enable JavaScript.
+        JavaScript is only used for dark mode and anonymised Cloudflare statistics that include things
+        like browser, country and page load times.
+      </p>
+      <style>
+        button {
+          display: none;
+        }
+      </style>
+    </noscript>
     <button class="w-full bg-blue-400 text-black rounded-md p-2" id="toggle-theme">Light / Dark theme</button>
     <p class="pb-4">
       Surely, right? It seems that almost everyone says this. And that almost everyone reccomends it
@@ -112,7 +123,7 @@
       <summary>DDoSing the AUR (yes, seriously)</summary>
       <h2>Pamac sends thousands of requests</h2>
       <p>
-        Manjaro's AUR helper, pamac, shipped a version with a bug that accidentally sent thousands
+        Manjaro's AUR helper, pamac, shipped a version with a bug on 2020-04-26 that accidentally sent thousands
         of requests to the AUR per user. This rendered the AUR offline for <em>all</em> users across
         every Arch-based distro for a few hours.
       </p>
@@ -128,8 +139,27 @@
           </a>
         </li>
       </ul>
+
+      <h2>and again...</h2>
       <p>
-        While this absolutely was not intentional, this highlights their poor QA testing.
+        On 2021-10-14, Manjaro once again shipped a bad version of pamac, resulting in pamac being
+        blocked again. This may have been the cause for the day's earlier outage.
+      </p>
+      <ul>
+        <li>
+          <a href="https://redd.it/q85t8n/" rel="noopener" target="_blank">
+            Reddit Thread
+          </a>
+        </li>
+        <li>
+          <a href="https://gitlab.manjaro.org/applications/pamac/-/issues/1135" rel="noopener" target="_blank">
+            Gitlab Issue
+          </a>
+        </li>
+      </ul>
+      <p>
+        While these events absolutely was not intentional, this highlights their poor QA testing.
+        This has happened on two seperate occasions in less than two years.
       </p>
     </details>
 
@@ -166,15 +196,12 @@
       trying to figure out the odd quirks and issues that Manjaro causes.
     </p>
   </main>
-  <footer class="xl:flex items-center justify-between">
-    <p>Made with TailwindCSS.</p>
-    <div>
-      <p><a href="https://github.com/EmeraldSnorlax/manjarno" rel="noopener" target="_blank">
-          <span class="hidden lg:inline">Contributions welcome!</span> BSD-3-Clause License - EmeraldSnorlax (Rain)
-        </a></p>
-      <p class="hidden xl:inline">Mirroring welcome, as long as the license is abided by.</p>
-    </div>
-
+  <footer>
+    <p class="text-center">
+      <a href="https://github.com/EmeraldSnorlax/manjarno" rel="noopener" target="_blank">
+        BSD-3-Clause License - EmeraldSnorlax (Rain)
+      </a>
+    </p>
   </footer>
 
   <script type="module" src="/src/main.ts" async defer></script>
