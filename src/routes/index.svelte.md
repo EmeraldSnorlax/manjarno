@@ -13,8 +13,7 @@
 
 > Manjaro is just Arch with an installer
 
-Surely, right? It seems that almost everyone says this. And that almost everyone recommends it
-as being a supposedly 'user-friendly' way to use Arch.
+Surely, right?
 
 ## Security
 
@@ -26,7 +25,7 @@ Manjaro has a track record of pretty poor security.
 
 [No wait, thrice and counting.](https://web.archive.org/web/20220102232338/https://forum.manjaro.org/t/expired-certificate-for-iso-download-on-download-manjaro-org/96441)
 
-The first times their certificate expired, they told their users to roll their clocks back as a fix:
+The first time their certificate expired, they told their users to roll their clocks back as a fix:
 
 https://web.archive.org/web/20150409040851/https://manjaro.github.io/expired_SSL_certificate/
 
@@ -44,7 +43,7 @@ Holding back packages for two weeks can also cause security issues, but this iss
 
 ## Stability
 
-I have used both Manjaro and Arch for a while, and have ironically had fewer problems with the stability of the Arch than Manjaro. Manjaro would often require coaxing to get packages to install, which seems to defeat the purpose of using Manjaro, a supposedly more user-friendly alternative to Arch.
+I have used both Manjaro and Arch for a while, and have ironically had fewer problems with the stability of Arch than Manjaro. Manjaro would often require coaxing to get packages to install, which seems to defeat the purpose of using Manjaro, a supposedly more user-friendly alternative to Arch.
 
 You've probably seen across their resources that Manjaro holds Arch packages behind for two
 weeks. Stability is stated as the reason for this, but that doesn't make much sense.
