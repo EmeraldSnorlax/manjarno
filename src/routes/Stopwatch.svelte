@@ -38,8 +38,8 @@
     </noscript>
 		<span class="block text-2xl text-center">It has been</span>
 		<span class="font-display block text-5xl text-center my-2"
-			>{days}d {hours}h {minutes}m {seconds}s</span
-		>
+			>{days}d {hours}h <span class="hidden md:inline-block">{minutes}m</span> <span class="hidden lg:inline-block">{seconds}s</span>
+      </span>
 		<span class="block text-xl text-center"
 			>since Manjaro <span class="inline-block font-display">!$%&?*#</span> up.</span
 		>
