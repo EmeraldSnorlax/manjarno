@@ -4,3 +4,4 @@ pamac
 seperate
 EndeavourOS
 manjaro
+milis
