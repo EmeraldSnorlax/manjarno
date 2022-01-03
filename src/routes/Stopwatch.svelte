@@ -44,7 +44,7 @@
 			>since Manjaro <span class="inline-block font-display">!$%&?*#</span> up.</span
 		>
 		<span class="block">
-			On <span class="inline-block font-display">2021-12-27 </span>, they {event.reason}
+			On <span class="inline-block font-display">{event.date.getFullYear()}-{pad(event.date.getMonth(), 2)}-{pad(event.date.getDate(), 2)} </span>, they {event.reason}
 		</span>
 	</div>
 </div>
