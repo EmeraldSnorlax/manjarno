@@ -1,0 +1,2 @@
+*.js linguist-vendored
+*.svelte.md linguist-language=Svelte
