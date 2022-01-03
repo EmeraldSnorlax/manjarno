@@ -2,6 +2,8 @@
 	import '../app.postcss';
 </script>
 
-<article class="prose">
-  <slot/>
-</article>
+<main class="max-w-prose flex mx-auto mt-6">
+  <article class="prose dark:prose-invert">
+    <slot/>
+  </article>
+</main>
