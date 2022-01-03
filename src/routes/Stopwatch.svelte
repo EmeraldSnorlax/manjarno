@@ -2,24 +2,40 @@
 	import { onMount } from 'svelte';
 	import event from './event';
 
-	let days = 0;
-	let hours = 0;
-	let minutes = 0;
-	let seconds = 0;
+	/**
+	 * Pad a number with zeros such that it always has a length of `length`.
+	 * @param number The number to pad.
+	 * @param length The length of the resulting string.
+	 */
+	function pad(number: number, length: number): string {
+		let str = '' + number;
+		while (str.length < length) {
+			str = '0' + str;
+		}
+
+		return str;
+	}
+	let days = '??';
+	let hours = '??';
+	let minutes = '??';
+	let seconds = '??';
 
 	onMount(() => {
 		setInterval(() => {
 			const time = new Date().getTime() - new Date(event.date).getTime();
-			days = Math.floor(time / (1000 * 60 * 60 * 24));
-			hours = Math.floor(time / (1000 * 60 * 60)) % 24;
-			minutes = Math.floor(time / (1000 * 60)) % 60;
-			seconds = Math.floor(time / 1000) % 60;
+			days = String(Math.floor(time / (1000 * 60 * 60 * 24)));
+			hours = pad(Math.floor(time / (1000 * 60 * 60)) % 24, 2);
+			minutes = pad(Math.floor(time / (1000 * 60)) % 60, 2);
+			seconds = pad(Math.floor(time / 1000) % 60, 2);
 		}, 200);
 	});
 </script>
 
-<div class="w-full flex items-center justify-center mb-4">
+<div class="w-full flex items-center justify-center mb-32">
 	<div>
+    <noscript class="text-center inline-block w-full text-red-600">
+      Enable JavaScript to see the stopwatch.
+    </noscript>
 		<span class="block text-2xl text-center">It has been</span>
 		<span class="font-display block text-5xl text-center my-2"
 			>{days}d {hours}h {minutes}m {seconds}s</span
