@@ -1,16 +1,13 @@
-const colors = require('tailwindcss/colors')
-module.exports = {
-	darkMode: "class",
-	purge: [
-		"*.{html,js,svelte,ts}",
-	],
+const config = {
+	content: ['./src/**/*.{html,js,svelte,ts}'],
+
 	theme: {
-		extend: {
-			colors: {
-				"true-gray": colors.trueGray,
-				cream: '#f2eadc',
-			}
-		},
+		extend: {}
 	},
-	plugins: [],
+
+	plugins: [
+		require('@tailwindcss/typography')
+	]
 };
+
+module.exports = config;
