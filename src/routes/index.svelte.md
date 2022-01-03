@@ -3,6 +3,12 @@
   This is just a spicy markdown file, don't be intimidated by the Svelte in the middle.
 -->
 
+<script>
+  import Stopwatch from './Stopwatch.svelte'
+</script>
+
+<Stopwatch />
+
 # Manjarno
 
 > Manjaro is just Arch with an installer
