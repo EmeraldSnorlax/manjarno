@@ -1,0 +1,3 @@
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qand again...\\E$"}
+{"rule":"DATE_NEW_YEAR","sentence":"^\\QOn 2021-10-14, Manjaro once again shipped a bad version of pamac, resulting in pamac being blocked again.\\E$"}
+{"rule":"I_LOWERCASE","sentence":"^\\QThis resource is to quickly have something to point to the next time someone says \"should i use manjaro??\" in a chat room.\\E$"}

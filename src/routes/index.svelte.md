@@ -7,8 +7,8 @@
 
 > Manjaro is just Arch with an installer
 
-Surely, right? It seems that almost everyone says this. And that almost everyone reccomends it
-as being a supposedly 'user friendly' way to use Arch.
+Surely, right? It seems that almost everyone says this. And that almost everyone recommends it
+as being a supposedly 'user-friendly' way to use Arch.
 
 ## Security
 
@@ -38,7 +38,7 @@ Holding back packages for two weeks can also cause security issues, but this iss
 
 ## Stability
 
-I have used both Manjaro and Arch for a while, and have ironically had fewer problems with the stability of the Arch than Manjaro. Manjaro would often require coaxing to get packages to install, which seems to defeat the purpose of using Manjaro, a supposedly more user friendly alternative to Arch.
+I have used both Manjaro and Arch for a while, and have ironically had fewer problems with the stability of the Arch than Manjaro. Manjaro would often require coaxing to get packages to install, which seems to defeat the purpose of using Manjaro, a supposedly more user-friendly alternative to Arch.
 
 You've probably seen across their resources that Manjaro holds Arch packages behind for two
 weeks. Stability is stated as the reason for this, but that doesn't make much sense.
@@ -58,7 +58,7 @@ that's effectively two weeks out of date. This causes [partial upgrades](https:/
 
 ### Funding
 
-Manjaro has a controversey with their treasurer.  A team member had purchased a gaming laptop, and the treasurer asked to clarify this purchase. [This ultimately led to the treasurer being removed.](https://redd.it/hxp3zi) Isn't the whole point of a treasurer to ensure fair and efficient use of donation funds?
+Manjaro has a controversy with their treasurer.  A team member had purchased a gaming laptop, and the treasurer asked to clarify this purchase. [This ultimately led to the treasurer being removed.](https://redd.it/hxp3zi) Isn't the whole point of a treasurer to ensure fair and efficient use of donation funds?
 
 ## Poor QA
 
@@ -93,7 +93,7 @@ While these incidents were in no way intentional, it highlights the poor QA test
 
 ## Quick things
 
-I know what I've written here can be seen as inflammatory, but that's not really what this page is for. This resource is to quickly have sometihng to point to the next time someone says "should i use manjaro??" in a chat room.
+I know what I've written here can be seen as inflammatory, but that's not really what this page is for. This resource is to quickly have something to point to the next time someone says "should i use manjaro??" in a chat room.
 
 Maintaining a distro is commendable, and that alone takes credit. However, I'd rather not have
 your time (and others, when Manjaro inevitably breaks, and you need to ask for help) wasted,
