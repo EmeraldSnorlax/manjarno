@@ -94,7 +94,7 @@ While these incidents were in no way intentional, it highlights the poor QA test
 ~~I am in no way affiliated with these projects.~~
 
 * [Arch already has an installer.](https://github.com/archlinux/archinstall)
-* [EndeavourOS](https://endeavouros.com/) seems to be what Manjaro is going for, but done properly as far as I can tell. Using an Arch derivative is still a bit questionable in my opinion, though. The main excuse for doing so (lack of an automated installer) doesn't really apply anymore as Arch ships with `archinstall`. However, EndeavourOS has a GUI installer, which should be a lot more approachable, and offers many more configurations to choose from out of the box than `archinstall`.
+* [EndeavourOS](https://endeavouros.com/) seems to be what Manjaro is going for -- just rightly done as far as I can tell. That said, using an Arch derivative is still a bit questionable in my view. The main excuse for doing so (lack of an automated installer) doesn't apply anymore as Arch ships with `archinstall`. However, EndeavourOS has a GUI installer, which should be much more approachable, and offers many more configurations to choose from out of the box than `archinstall`.
 * I've also been told about [Garuda](https://garudalinux.org/), which seems to be trying to do a similar thing to Endeavour too.
 
 ## Quick things
