@@ -21,7 +21,7 @@ Manjaro has a track record of pretty poor security.
 
 ### SSL Certificates
 
-[Manjaro have let their certificates expire twice!](https://redd.it/4inrut/)
+[Manjaro has let their certificates expire twice!](https://redd.it/4inrut/)
 
 [No wait, thrice and counting.](https://web.archive.org/web/20220102232338/https://forum.manjaro.org/t/expired-certificate-for-iso-download-on-download-manjaro-org/96441)
 
@@ -48,8 +48,8 @@ I have used both Manjaro and Arch for a while, and have ironically had fewer pro
 You've probably seen across their resources that Manjaro holds Arch packages behind for two
 weeks. Stability is stated as the reason for this, but that doesn't make much sense.
 
-In practice, what this actually means is that software upgrades reach you later for seemingly
-no reason. That means getting updates -- new features, security patches, bug fixes -- two whole weeks late. Aside from the obvious downside this brings, it also causes a more insidious issue.
+In practice, what this means is that software upgrades reach you later for seemingly
+no reason. That means getting updates -- new features, security patches, bug fixes -- two whole weeks late. Aside from the obvious downside, it also causes a more insidious issue.
 
 ### The AUR
 
@@ -85,7 +85,7 @@ blocked again. This may have been the cause for the day's earlier outage.
 
 * https://gitlab.manjaro.org/applications/pamac/-/issues/1135
 
-While these incidents were in no way intentional, it highlights the poor QA testing that Manjaro performs. This has happened on two seperate occasions in less than two years.
+While these incidents were in no way intentional, it highlights the poor QA testing that Manjaro performs. This has happened on two separate occasions in less than two years.
 
 ---
 
