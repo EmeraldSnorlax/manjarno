@@ -97,6 +97,8 @@ While these incidents were in no way intentional, it highlights the poor QA test
 * [EndeavourOS](https://endeavouros.com/) seems to be what Manjaro is going for -- just rightly done as far as I can tell. That said, using an Arch derivative is still a bit questionable in my view. The main excuse for doing so (lack of an automated installer) doesn't apply anymore as Arch ships with `archinstall`. However, EndeavourOS has a GUI installer, which should be much more approachable, and offers many more configurations to choose from out of the box than `archinstall`. EndeavourOS also has an online installer so you can select a desktop you would like to use instead of the themed Xfce desktop EndeavourOS ships with.
 * [Garuda](https://garudalinux.org/), which aims to have a Manjaro-like experience without holding back packages and the problems Manjaro has.
 
+Once again though, I'd like to reiterate that Arch already ships with a reasonably friendly installer.
+
 ## Quick things
 
 I know what I've written here can be seen as inflammatory, but that's not really what this page is for. This resource is to quickly have something to point to the next time someone says "should i use manjaro??" in a chat room.
