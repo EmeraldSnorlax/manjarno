@@ -63,7 +63,7 @@ that's effectively two weeks out of date. This causes [partial upgrades](https:/
 
 ### Funding
 
-Manjaro has a controversy with their treasurer.  A team member had purchased a gaming laptop, and the treasurer asked to clarify this purchase. [This ultimately led to the treasurer being removed.](https://redd.it/hxp3zi) Isn't the whole point of a treasurer to ensure fair and efficient use of donation funds?
+Manjaro has a controversy with their treasurer. Phillip Muller (Manjaro team lead) had purchased a laptop for €2000, and the treasurer asked to clarify his purchase. [This ultimately led to the treasurer being removed.](https://redd.it/hxp3zi) Isn't the whole point of a treasurer to ensure fair and efficient use of donation funds?
 
 ## Poor QA
 
@@ -94,8 +94,8 @@ While these incidents were in no way intentional, it highlights the poor QA test
 ~~I am in no way affiliated with these projects.~~
 
 * [Arch already has an installer.](https://github.com/archlinux/archinstall)
-* [EndeavourOS](https://endeavouros.com/) seems to be what Manjaro is going for -- just rightly done as far as I can tell. That said, using an Arch derivative is still a bit questionable in my view. The main excuse for doing so (lack of an automated installer) doesn't apply anymore as Arch ships with `archinstall`. However, EndeavourOS has a GUI installer, which should be much more approachable, and offers many more configurations to choose from out of the box than `archinstall`.
-* I've also been told about [Garuda](https://garudalinux.org/), which seems to be trying to do a similar thing to Endeavour too.
+* [EndeavourOS](https://endeavouros.com/) seems to be what Manjaro is going for -- just rightly done as far as I can tell. That said, using an Arch derivative is still a bit questionable in my view. The main excuse for doing so (lack of an automated installer) doesn't apply anymore as Arch ships with `archinstall`. However, EndeavourOS has a GUI installer, which should be much more approachable, and offers many more configurations to choose from out of the box than `archinstall`. EndeavourOS also has an online installer so you can select a desktop you would like to use instead of the themed Xfce desktop EndeavourOS ships with.
+* [Garuda](https://garudalinux.org/), which aims to have a Manjaro-like experience without holding back packages and the problems Manjaro has.
 
 ## Quick things
 
