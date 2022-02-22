@@ -61,7 +61,7 @@ that's effectively two weeks out of date. This causes [partial upgrades](https:/
 
 That, and Manjaro *doesn't actually support* the AUR. Despite their [contradictory messages](https://web.archive.org/web/20220221092555/https://forum.endeavouros.com/t/is-aur-down-again/24287/9), Manjaro hides behind [blaming the users of pamac](https://web.archive.org/web/20220221090752/https://forum.manjaro.org/t/aur-please-restrain-yourself/103318). They provide insufficent warnings about the AUR and the potential risks, while providing a simplified interface for installing AUR packages via pamac. This is akin to letting someone with no briefing into a construction site. Sure, the heavy machinery might be quicker than using a shovel, but they are ultimately putting themselves in danger due to not being made aware of the consequences.
 
-To be clear, I'm not inherently against Manjaro using the AUR. However, it should be something to think about carefully. The AUR requires at least some level of awareness, *especially* on a distro that likes to hold its packages back and made arbitrary changes. If you can reconcile this contradictory ideology, then at the very least pamac should be more careful in how it presents the AUR.
+To be clear, I'm not inherently against Manjaro using the AUR. However, it should be something to think about carefully. The AUR requires at least some level of awareness, *especially* on a distro that likes to hold its packages back and make arbitrary changes. If you can reconcile this contradictory ideology, then at the very least pamac should be more careful in how it presents the AUR.
 
 ~~pamac, and by extension Manjaro, also isn't very polite to the AUR. But you can read about their DDoSes below...~~
 
