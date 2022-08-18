@@ -25,7 +25,7 @@ Manjaro has a track record of pretty poor security.
 
 [No wait, thrice and counting.](https://web.archive.org/web/20220102232338/https://forum.manjaro.org/t/expired-certificate-for-iso-download-on-download-manjaro-org/96441)
 
-Four times! This one is a *little* better, as at [least they've set HSTS](./expiry-2022-08-17.png), but still, *[come on man](./expiry-2022-08-17-cert.png)*.
+Four times! This one is a *little* better, as at [least they've set HSTS](./expiry-2022-08-17.png), but still, *[come on man](https://www.reddit.com/r/linuxquestions/comments/wqzrpl/did_manjaro_just_forget_to_renew_the_ssl/)*.
 
 The first time their certificate expired, they told their users to roll their clocks back as a fix:
 
