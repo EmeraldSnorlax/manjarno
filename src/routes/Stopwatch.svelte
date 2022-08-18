@@ -46,7 +46,7 @@
 		>
 		<span class="block">
 			On <span class="inline-block font-display"
-				>{event.date.getFullYear()}-{pad(event.date.getMonth(), 2)}-{pad(event.date.getDate(), 2)}
+				>{event.date.getFullYear()}-{pad(event.date.getMonth() + 1, 2)}-{pad(event.date.getDate(), 2)}
 			</span>, they {event.reason}
 		</span>
 	</div>
