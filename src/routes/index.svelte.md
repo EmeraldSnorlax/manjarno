@@ -67,6 +67,11 @@ To be clear, I'm not inherently against Manjaro using the AUR. However, it shoul
 
 ~~pamac, and by extension Manjaro, also isn't very polite to the AUR. But you can read about their DDoSes below...~~
 
+### Rushing Asahi out the door
+
+In their attempt to get Asahi Linux out (and support Apple Silicon) as soon as possible, they ended [pulling the latest PKGBUILD without talking to the devs](https://twitter.com/marcan42/status/1576414477272387584). This has resulted in them shipping potentially broken kernels to end users.
+
+Still though, that's besides the main probblem. It was [only about 3 days ago this video came out](https://www.youtube.com/watch?v=k0cnMUroMlQ), in which a DE is working for the first time. Not only is it still in a state far from prime-time, but compounded with the tweet above they didn't even bother trying to speak with the devs of the project about it's current state. 
 
 ## Management
 
