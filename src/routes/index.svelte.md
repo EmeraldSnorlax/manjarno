@@ -43,10 +43,6 @@ https://web.archive.org/web/20150409040851/https://manjaro.github.io/expired_SSL
 
 Holding back packages for two weeks can also cause security issues, but this issue is probably better addressed in the stability section.
 
-## "Suitable for beginners"
-
-Manjaro claims that it is a distribution that's suitable for both beginners and experienced users, this is also an opinion you can often hear on the internet. In reality, beginners shouldn't use rolling-release distros. If you're using one you need to be prepared for potential issues and bugs and know how to troubleshoot them because of the very frequent updates - with rolling-release distros you get the latest versions of packages which, while it might sound good, may result in problems with the packages. Frequent kernel updates can sometimes result in issues with drivers, and you have to troubleshoot these issues as well.
-
 ## Stability
 
 I have used both Manjaro and Arch for a while, and have ironically had fewer problems with the stability of Arch than Manjaro. Manjaro would often require coaxing to get packages to install, which seems to defeat the purpose of using Manjaro, a supposedly more user-friendly alternative to Arch.
@@ -60,12 +56,12 @@ no reason. That means getting updates -- new features, security patches, bug fix
 ### The AUR
 
 I'm sure one of the reasons you're gravitating towards Manjaro is the AUR. Being able to
-run install scripts for anything sure sounds neat, right?
+run install scripts for anything sure sounds neat, right? First of all, you need to know that you shouldn't trust the AUR too much and you should inspect these scripts before running. Not only can it help you avoid potentially malicious packages but also provide information helpful for troubleshooting a given program.
 
-Well, most of these scripts are written with the assumption that you aren't running a system
+Also, most of these scripts are written with the assumption that you aren't running a system
 that's effectively two weeks out of date. This causes [partial upgrades](https://wiki.archlinux.org/title/System_maintenance#Partial_upgrades_are_unsupported). At best, that program won't install or work correctly and at worst can cause all kinds of issues on your system with no obvious way to fix it.
 
-That, and Manjaro *doesn't actually support* the AUR. Despite their [contradictory messages](https://web.archive.org/web/20220221092555/https://forum.endeavouros.com/t/is-aur-down-again/24287/9), Manjaro hides behind [blaming the users of pamac](https://web.archive.org/web/20220221090752/https://forum.manjaro.org/t/aur-please-restrain-yourself/103318). They provide insufficent warnings about the AUR and the potential risks, while providing a simplified interface for installing AUR packages via pamac.  This is akin to letting someone with no briefing into a construction site. Sure, the heavy machinery might be quicker than using a shovel, but they are ultimately putting themselves in danger due to not being made aware of the consequences. The AUR is insecure and you need to inspect the PKGBUILD before building. Blindly installing AUR packages can be harmful to your system.
+That, and Manjaro *doesn't actually support* the AUR. Despite their [contradictory messages](https://web.archive.org/web/20220221092555/https://forum.endeavouros.com/t/is-aur-down-again/24287/9), Manjaro hides behind [blaming the users of pamac](https://web.archive.org/web/20220221090752/https://forum.manjaro.org/t/aur-please-restrain-yourself/103318). They provide insufficent warnings about the AUR and the potential risks, while providing a simplified interface for installing AUR packages via pamac. This is akin to letting someone with no briefing into a construction site. Sure, the heavy machinery might be quicker than using a shovel, but they are ultimately putting themselves in danger due to not being made aware of the consequences.
 
 
 To be clear, I'm not inherently against Manjaro using the AUR. However, it should be something to think about carefully. The AUR requires at least some level of awareness, *especially* on a distro that likes to hold its packages back and make arbitrary changes. If you can reconcile this contradictory ideology, then at the very least pamac should be more careful in how it presents the AUR.
@@ -108,7 +104,7 @@ While these incidents were in no way intentional, it highlights the poor QA test
 
 ## Miscellaneous
 
-[Their system update script runs `rm` on the lockfile mid-transaction.](https://gitlab.manjaro.org/packages/core/manjaro-system/blob/3b806753e245b7ec7e18bb674e916e28d751a429/manjaro-update-system.sh#L45(https://archive.fo/dofw8)).
+[Their system update script runs `rm` on the lockfile mid-transaction.](https://gitlab.manjaro.org/packages/core/manjaro-system/blob/3b806753e245b7ec7e18bb674e916e28d751a429/manjaro-update-system.sh#L45(https://archive.fo/dofw8)) The lockfile is in place to prevent multiple instances of pacman from trying to alter the package database at the same time. Sometimes, when pacman is interrupted the stale lockfile can remain, in those cases removing the lockfile is a common troubleshooting step. However you should only do that when you are **absolutely certain** there are no other pacman instances running and Manjaro's script does this preventively, without even prompting the user.
 
 ---
 
