@@ -104,7 +104,7 @@ While these incidents were in no way intentional, it highlights the poor QA test
 
 ## Miscellaneous
 
-[Their system update script runs `rm` on the lockfile mid-transaction.](https://gitlab.manjaro.org/packages/core/manjaro-system/blob/3b806753e245b7ec7e18bb674e916e28d751a429/manjaro-update-system.sh#L45(https://archive.fo/dofw8)) The lockfile is in place to prevent multiple instances of pacman from trying to alter the package database at the same time. Sometimes, when pacman is interrupted the stale lockfile can remain, in those cases removing the lockfile is a common troubleshooting step. However you should only do that when you are **absolutely certain** there are no other pacman instances running and Manjaro's script does this preventively, without even prompting the user.
+[Their system update script used to run `rm` on the lockfile mid-transaction.](https://gitlab.manjaro.org/packages/core/manjaro-system/blob/3b806753e245b7ec7e18bb674e916e28d751a429/manjaro-update-system.sh#L45) The lockfile is in place to prevent multiple instances of pacman from trying to alter the package database at the same time. Sometimes, when pacman is interrupted the stale lockfile can remain, in those cases removing the lockfile is a common troubleshooting step. However you should only do that when you are **absolutely certain** there are no other pacman instances running and Manjaro's script does this preventively, without even prompting the user.
 
 ---
 
