@@ -5,3 +5,5 @@ seperate
 EndeavourOS
 manjaro
 milis
+Asahi
+PKGBUILD
