@@ -55,8 +55,7 @@ no reason. That means getting updates -- new features, security patches, bug fix
 
 ### The AUR
 
-I'm sure one of the reasons you're gravitating towards Manjaro is the AUR. Being able to
-run install scripts for anything sure sounds neat, right? First of all, you need to know that you shouldn't trust the AUR too much and you should inspect these scripts before running. Not only can it help you avoid potentially malicious packages but also provide information helpful for troubleshooting a given program.
+I'm sure one of the reasons you're gravitating towards Manjaro is the AUR. Being able to run install scripts for anything sure sounds neat, right? Well, you need to be aware that you shouldn't trust the AUR in the same way you trust your distro's repos, as the scripts are user submitted. You should skim these scripts before running them to avoid running something malicious.
 
 Also, most of these scripts are written with the assumption that you aren't running a system
 that's effectively two weeks out of date. This causes [partial upgrades](https://wiki.archlinux.org/title/System_maintenance#Partial_upgrades_are_unsupported). At best, that program won't install or work correctly and at worst can cause all kinds of issues on your system with no obvious way to fix it.
@@ -104,7 +103,7 @@ While these incidents were in no way intentional, it highlights the poor QA test
 
 ## Miscellaneous
 
-[Their system update script used to run `rm` on the lockfile mid-transaction.](https://gitlab.manjaro.org/packages/core/manjaro-system/blob/3b806753e245b7ec7e18bb674e916e28d751a429/manjaro-update-system.sh#L45) The lockfile is in place to prevent multiple instances of pacman from trying to alter the package database at the same time. Sometimes, when pacman is interrupted the stale lockfile can remain, in those cases removing the lockfile is a common troubleshooting step. However you should only do that when you are **absolutely certain** there are no other pacman instances running and Manjaro's script does this preventively, without even prompting the user.
+[Their system update script used to run `rm` on the lockfile mid-transaction.](https://gitlab.manjaro.org/packages/core/manjaro-system/blob/3b806753e245b7ec7e18bb674e916e28d751a429/manjaro-update-system.sh#L45) The lockfile is in place to prevent multiple instances of pacman from trying to alter the package database at the same time. Sometimes, when pacman is interrupted the stale lockfile can remain, in those cases removing the lockfile is a common troubleshooting step. However, you should only do that when you are **absolutely certain** there are no other pacman instances running. Manjaro's script does this silently without checking for other instances.
 
 ---
 
