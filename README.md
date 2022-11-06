@@ -18,3 +18,7 @@ To get the timestamp of a Manjaro forum post, open dev tools and inspect the rel
 * `yarn dev`
 
 * `yarn build`
+
+---
+
+Things breaking with software is to be expected. However, systematic and repeated failures are things that can and should be avoided. When submitting new content for the article, please keep this in mind.
