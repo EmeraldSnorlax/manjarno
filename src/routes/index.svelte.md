@@ -27,6 +27,8 @@ Manjaro has a track record of pretty poor security.
 
 Four times! This one is a *little* better, as at [least they've set HSTS](./expiry-2022-08-17.png), but still, *[come on man](https://www.reddit.com/r/linuxquestions/comments/wqzrpl/did_manjaro_just_forget_to_renew_the_ssl/)*.
 
+[Five.](https://crt.sh/?q=66%3A16%3AD9%3A94%3AF4%3A7E%3A0F%3A87%3A1B%3A95%3A83%3A7D%3A7A%3ADE%3AB5%3A41%3A05%3A84%3A95%3A56) This time it was their archived forum. In fairness, they're [keeping up the trend of at least having HSTS on](./expiry-2022-11-06.png)?
+
 The first time their certificate expired, they told their users to roll their clocks back as a fix:
 
 https://web.archive.org/web/20150409040851/https://manjaro.github.io/expired_SSL_certificate/
