@@ -15,6 +15,16 @@
 
 Surely, right?
 
+## Foreword
+
+It's impossible to not make mistakes, especially with software. While it's tempting to mock every single mistake, that isn't really the point of this page.
+Most things documented here to showcase a pattern of mistakes, with the events that were one-offs being things I (subjectively) feel are egregious enough warrant showing up here.
+If you have any feedback or questions, or want to suggest changes, [open an issue or a pull request](https://github.com/EmeraldSnorlax/manjarno).
+
+A few others maintain similar resources to this -- you might also want to check out:
+
+- https://github.com/arindas/manjarno
+
 ## Security
 
 Manjaro has a track record of pretty poor security.
