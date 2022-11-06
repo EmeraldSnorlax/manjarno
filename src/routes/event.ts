@@ -2,5 +2,5 @@
 
 export default {
   date: new Date(1667606399000),
-  reason: 'their archived forums certificate has expired'
+  reason: 'forgot to renew their archived forums\' SSL cert.'
 }
