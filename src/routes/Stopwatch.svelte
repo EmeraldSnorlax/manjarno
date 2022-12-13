@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import event from './event';
 
 	/**
@@ -22,14 +21,6 @@
 	let minutes = pad(Math.floor(currentTime / (1000 * 60)) % 60, 2);
 	let seconds = pad(Math.floor(currentTime / 1000) % 60, 2);
 
-	onMount(() => {
-		setInterval(() => {
-			days = String(Math.floor(currentTime / (1000 * 60 * 60 * 24)));
-			hours = pad(Math.floor(currentTime / (1000 * 60 * 60)) % 24, 2);
-			minutes = pad(Math.floor(currentTime / (1000 * 60)) % 60, 2);
-			seconds = pad(Math.floor(currentTime / 1000) % 60, 2);
-		}, 200);
-	});
 </script>
 
 <div class="w-full flex items-center justify-center mb-32">
