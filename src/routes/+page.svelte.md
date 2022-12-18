@@ -85,6 +85,32 @@ In their attempt to get Asahi Linux out (and support Apple Silicon) as soon as p
 
 Still though, that's besides the main problem. It was [only about 3 days ago this video came out](https://www.youtube.com/watch?v=k0cnMUroMlQ), in which a DE is working for the first time. Not only is it still in a state far from prime-time, but compounded with the tweet above they didn't even bother trying to speak with the devs of the project about its current state. 
 
+### Shipping third-party Firefox theme by default on Manjaro GNOME
+
+Manjaro GNOME ships a third-party Firefox theme named [Firefox GNOME Theme](https://github.com/rafaelmardojai/firefox-gnome-theme), in attempt to make Firefox fit better in the GNOME environment. Recently, this theme appeared broken and unusable right after a Firefox update:
+
+- https://www.reddit.com/r/firefox/comments/zn589n/firefox_updates_it_self_and_now_my_tab_bar_looks
+
+We notice that tabs have disappeared, and dropdown menus are misplaced.
+
+Firefox GNOME Theme developers explicitly discourage distribution maintainers to ship Firefox GNOME Theme by default. At the beginning of the README of Firefox GNOME Theme, we read the following:
+
+> ### Disclaimer:
+> 
+> Be aware that this theme might do things that are not supported by upstream Firefox. If you face an issue while using this theme, report it here first or test if it is repoducible in vanilla Firefox.
+> 
+> **If you are a software distribution maintainer, please do not ship this changes by default to your users unless you made extremely clear that they are using a modified version of Firefox UI.**
+
+The maintainer stated again on Mastodon that they added a disclaimer for that reason:
+
+- https://floss.social/@rafaelmardojai/109532714277650579
+
+While it is not explained in the README, third-party themes are susceptible to accessibility regressions and usability bugs after the app gets updated, in this case Firefox. Third-party themes generally have to update their theme to overwrite the correct and latest interfaces of the app, i.e. the latest version of the app. These third-party themes can take hours, days or even weeks to get updated. It is a complicated step, and it is far from perfect.
+
+Usually, these themes should be left unchanged by default, as Firefox developers have put in the work to improve accessibility in each update, and collectively test the interface for it to be used by the average Firefox user.
+
+At the time of writing this section of the article, this disclaimer was added [5 months ago](https://github.com/rafaelmardojai/firefox-gnome-theme/commit/d003b06cdd3b2cb4f550161c09d11221c0f2598f), but no actions were taken by Manjaro to revert the change since then.
+
 ## Management
 
 ### Funding
