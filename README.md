@@ -3,7 +3,7 @@
 ## Contributing
 
 ### Adding new content to the article
-Edit [`src/routes/index.svelte.md`](https://github.com/EmeraldSnorlax/manjarno/blob/main/src/routes/+page.svelte.md) to add new content to the article.
+Edit [`src/routes/+page.svelte.md`](https://github.com/EmeraldSnorlax/manjarno/blob/main/src/routes/+page.svelte.md) to add new content to the article.
 
 You don't need to know Svelte to do this; the article is written using Markdown. If you can edit your repo's `README.md`, you can edit this article -- no web skills needed :)
 
