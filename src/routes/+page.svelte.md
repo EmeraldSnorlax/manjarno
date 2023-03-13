@@ -15,6 +15,10 @@
 
 Surely, right?
 
+## Announcement
+
+Hi, I've made a somewhat large inaccuracy with regard to Manjaro's alleged financial issues. [You can read from Phil himself here](https://github.com/EmeraldSnorlax/manjarno/issues/32). He was not purchaser of the laptop, nor was he the one to finally approve the decision.
+
 ## Foreword
 
 It's impossible to not make mistakes, especially with software. While it's tempting to mock every single mistake, that isn't really the point of this page.
@@ -89,7 +93,9 @@ Still though, that's besides the main problem. It was [only about 3 days ago thi
 
 ### Funding
 
-Manjaro has had a controversy with their treasurer. Phillip Muller (Manjaro team lead) had purchased a laptop for €2000, and the treasurer asked to clarify his purchase. [This ultimately led to the treasurer being removed.](https://redd.it/hxp3zi) Isn't the whole point of a treasurer to ensure fair and efficient use of donation funds?
+**This section is inaccurate, and left here for transparency's sake. [Read more here.](https://github.com/EmeraldSnorlax/manjarno/issues/32)**
+
+~~Manjaro has had a controversy with their treasurer. Phillip Muller (Manjaro team lead) had purchased a laptop for €2000, and the treasurer asked to clarify his purchase. [This ultimately led to the treasurer being removed.](https://redd.it/hxp3zi) Isn't the whole point of a treasurer to ensure fair and efficient use of donation funds?~~
 
 ## Poor QA
 
