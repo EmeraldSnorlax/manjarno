@@ -119,6 +119,12 @@ blocked again. This may have been the cause for the day's earlier outage.
 
 While these incidents were in no way intentional, it highlights the poor QA testing that Manjaro performs. This has happened on two separate occasions in less than two years.
 
+### Sending pull requests to ALARM without testing
+
+They've once again tried to support Apple Silicon by [sending a PR adding broken drivers](https://github.com/archlinuxarm/PKGBUILDs/pull/1946) before the Asahi team was ready.
+
+ALARM is also responsible for merging this without testing or consulting with upstream Asahi.
+
 ## Miscellaneous
 
 [Their system update script used to run `rm` on the lockfile mid-transaction.](https://gitlab.manjaro.org/packages/core/manjaro-system/blob/3b806753e245b7ec7e18bb674e916e28d751a429/manjaro-update-system.sh#L45) The lockfile is in place to prevent multiple instances of pacman from trying to alter the package database at the same time. Sometimes, when pacman is interrupted, a stale lockfile can remain. In this case, removing the lockfile is a common troubleshooting step. However, you should only do that when you are **absolutely certain** there are no other pacman instances running. Manjaro's script used to do this silently without checking for other instances.
